@@ -1,0 +1,17 @@
+.card{
+    border: 2px solid forestgreen;
+    background-color: rgb(214, 156, 69);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    height: 130px;
+    width: 150px;
+    text-align: center;
+}
+
+.buyButton{
+    margin: 5px;
+    padding: 4px;
+    width: 80px;
+    border-radius: 5px;
+}
