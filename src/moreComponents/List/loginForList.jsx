@@ -1,3 +1,4 @@
+
 import { ProductData } from "./Listproduct";
 export const Login = ()=>{
 
@@ -26,5 +27,10 @@ export const Login = ()=>{
         </section>
         )
     }
-    return <ProductData/>
+    return (
+        <>
+           <ProductData/>
+           
+        </>
+    )
 }
