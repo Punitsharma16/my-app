@@ -1,4 +1,5 @@
 import { Form } from "./Forms/controlForm"
+import { DataOnUI } from "./Forms/fromDataOnUI"
 import { Info } from "./Forms/info"
 import { User } from "./Forms/multipleInputBox"
 import { Email, Name } from "./States/Login"
@@ -19,7 +20,8 @@ export const AppS = ()=>{
         <Counter2/> */}
         {/* <Info/> */}
         {/* <User/> */}
-        <Form/>
+        {/* <Form/> */}
+        <DataOnUI/>
         </>
     )
 }

@@ -1,24 +1,24 @@
 import { useState } from "react";
 
 export const Form =()=>{
-    const [userinfo,setUserInfo] = 
-    useState(
-        {firstName:'',
+    const intialize ={firstName:'',
     lastName:'',
     email:'',
     password:''}
-    )
+    const [userinfo,setUserInfo] = useState(intialize)
+
     const userInfo = (event)=>{
         // console.log(event.target.name);
         // console.log(event.target.value);
         const{name,value} = event.target;
-        let changes = name==='email' ? value.toLowerCase():value.toUpperCase();
-        userinfo[name] = changes
+        // let changes = name==='email' ? value.toLowerCase():value.toUpperCase();
+        userinfo[name] = value;
         setUserInfo({...userinfo});
-        console.log(userinfo);
+        // console.log(userinfo);
     }
     const signUp = (e)=>{
         e.preventDefault();
+        setUserInfo(intialize);
         console.log(userinfo);
     }
     return(
