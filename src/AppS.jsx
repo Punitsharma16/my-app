@@ -1,3 +1,7 @@
+
+import { NameError } from "./Forms/NameErr"
+import { ShowError } from "./Forms/ShowError"
+import { CheckBox } from "./Forms/checkBox"
 import { Form } from "./Forms/controlForm"
 import { DataOnUI } from "./Forms/fromDataOnUI"
 import { Info } from "./Forms/info"
@@ -9,6 +13,7 @@ import { Counter2 } from "./countersInState/AsyncState"
 import { Counter, Counter1 } from "./countersInState/counter"
 
 export const AppS = ()=>{
+    
     return(
         <>
         {/* <Name/>
@@ -21,7 +26,10 @@ export const AppS = ()=>{
         {/* <Info/> */}
         {/* <User/> */}
         {/* <Form/> */}
-        <DataOnUI/>
+        {/* <DataOnUI/> */}
+        {/* <CheckBox/> */}
+        {/* <ShowError/> */}
+        <NameError/>
         </>
     )
 }
