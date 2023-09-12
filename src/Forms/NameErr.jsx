@@ -4,6 +4,7 @@ export const NameError = ()=>{
     const startVal = {name:'',email:''}
 
     const [nameUser,setUser] = useState(startVal)
+    const [newErr,setNewErr] = useState(false);
     const [showErr,setShowErr] = useState(false);
     const [showEmailErr, setShowEmailErr] = useState(false);
 
@@ -14,20 +15,25 @@ export const NameError = ()=>{
     }
     const signUp = (event)=>{
         event.preventDefault();
-        if(nameUser.name === ''){
-            setShowErr(true);
-        }else{
+        if(nameUser.name === '' && nameUser.email === ''){
+            setNewErr(true);
+            setShowEmailErr(false);
             setShowErr(false);
         }
-        if(nameUser.email === ''){
+        else if(nameUser.name === ''){
+            setShowErr(true);
+            setNewErr(false);
+        }
+        else if(nameUser.email === ''){
             setShowEmailErr(true);
-        }else{
+            setNewErr(false);
             setShowEmailErr(false);
         }
-        console.log(nameUser.name);
+        // console.log(nameUser.name);
         // console.log(result);
         console.log(nameUser);
         setUser(startVal);
+        
     }
     return(
         <>
@@ -45,6 +51,9 @@ export const NameError = ()=>{
         }
         {
             showEmailErr && <p>Enter the Email</p>
+        }
+        {
+            newErr && <p>Enter Both The values</p>
         }
         </>
     )

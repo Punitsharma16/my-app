@@ -6,6 +6,7 @@ import { Form } from "./Forms/controlForm"
 import { DataOnUI } from "./Forms/fromDataOnUI"
 import { Info } from "./Forms/info"
 import { User } from "./Forms/multipleInputBox"
+import { Err } from "./Forms/onblur"
 import { Email, Name } from "./States/Login"
 import { UserInfo } from "./States/stateOnObj"
 import { Array } from "./States/statesOnArrays"
@@ -29,7 +30,8 @@ export const AppS = ()=>{
         {/* <DataOnUI/> */}
         {/* <CheckBox/> */}
         {/* <ShowError/> */}
-        <NameError/>
+        {/* <NameError/> */}
+        <Err/>
         </>
     )
 }
