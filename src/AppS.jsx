@@ -13,10 +13,10 @@ import { Array } from "./States/statesOnArrays"
 import { Counter2 } from "./countersInState/AsyncState"
 import { Counter, Counter1 } from "./countersInState/counter"
 import { FetchData } from "./useEffect/AsyncAwait"
-import { TryLoader } from "./useEffect/Loader"
+import { TryLoader } from "./useEffect/loader/Loader"
 import { CommentsWithLoader } from "./useEffect/commentsWithLoader"
-import { NewLoader } from "./useEffect/loaderdesign"
-import { NewData } from "./useEffect/newData"
+import { NewLoader } from "./useEffect/loader/loaderdesign"
+import { NewData } from "./useEffect/handleScroll"
 import { SideEffectExOne } from "./useEffect/useEffect"
 
 export const AppS = ()=>{
@@ -40,8 +40,8 @@ export const AppS = ()=>{
         {/* <Err/> */}
         {/* <SideEffectExOne/> */}
         {/* <FetchData/> */}
-        {/* <NewData/> */}
-        <TryLoader/>
+        <NewData/>
+        {/* <TryLoader/> */}
         {/* <CommentsWithLoader/> */}
         {/* <NewLoader/> */}
         </>

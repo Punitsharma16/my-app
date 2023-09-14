@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import Styles from './newData.module.css'
+import Styles from './handleScroll.module.css'
 export const NewData = ()=>{
     const [shops,setShops] = useState([]);
     const [page,setPage] = useState(1);
@@ -14,14 +14,16 @@ export const NewData = ()=>{
             console.log(page);
         })
     },[page])
-    
+
+    const handleSroll = ()=>{
+        if(document.documentElement.scrollTop > document.documentElement.scrollHeight*0.9){
+            setPage((prev)=>prev+1);
+        }
+    };
+
     useEffect(()=>{
-        window.addEventListener('scroll',()=>{
-            if(window.innerHeight + document.documentElement.scrollTop > (document.documentElement.offsetHeight*0.9)){
-                setPage(page+1);
-            }
-        })
-    },[page])
+        window.addEventListener('scroll',handleSroll);
+    },[])
     return(
         <main>
             {
