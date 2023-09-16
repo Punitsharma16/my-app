@@ -16,8 +16,12 @@ import { FetchData } from "./useEffect/AsyncAwait"
 import { TryLoader } from "./useEffect/loader/Loader"
 import { CommentsWithLoader } from "./useEffect/commentsWithLoader"
 import { NewLoader } from "./useEffect/loader/loaderdesign"
-import { NewData } from "./useEffect/handleScroll"
 import { SideEffectExOne } from "./useEffect/useEffect"
+// import InfiniteScroll from "./useEffect/loader/Scroll"
+import { Anything, Scroll } from "./useEffect/loader/Scroll"
+import { ShoeTwo } from "./Props/products"
+import { ContextApi } from "./ContextApi/contextApi"
+// import { HandleScroll } from "./useEffect/HandleScroll"
 
 export const AppS = ()=>{
     
@@ -40,10 +44,14 @@ export const AppS = ()=>{
         {/* <Err/> */}
         {/* <SideEffectExOne/> */}
         {/* <FetchData/> */}
-        <NewData/>
         {/* <TryLoader/> */}
         {/* <CommentsWithLoader/> */}
         {/* <NewLoader/> */}
+        {/* <HandleScroll/> */}
+        {/* <Anything/> */}
+        {/* <InfiniteScroll/> */}
+        {/* <ShoeTwo/> */}
+        <ContextApi/>
         </>
     )
 }
