@@ -19,8 +19,11 @@ import { NewLoader } from "./useEffect/loader/loaderdesign"
 import { SideEffectExOne } from "./useEffect/useEffect"
 // import InfiniteScroll from "./useEffect/loader/Scroll"
 import { Anything, Scroll } from "./useEffect/loader/Scroll"
-import { ShoeTwo } from "./Props/products"
+import { ShoeTwo } from "./Props/ParentToChild/products"
 import { ContextApi } from "./ContextApi/contextApi"
+import { Parent } from "./Props/ChildToParent.jsx/parent"
+import { Owner } from "./ContextApi/COntextAPi 2/owner"
+import { Datafile } from "./ContextApi/passDynmicVal/datafile"
 // import { HandleScroll } from "./useEffect/HandleScroll"
 
 export const AppS = ()=>{
@@ -51,7 +54,10 @@ export const AppS = ()=>{
         {/* <Anything/> */}
         {/* <InfiniteScroll/> */}
         {/* <ShoeTwo/> */}
-        <ContextApi/>
+        {/* <ContextApi/> */}
+        {/* <Parent/> */}
+        {/* <Owner/> */}
+        <Datafile/>
         </>
     )
 }
