@@ -1,5 +1,5 @@
 import { useRef, useState } from "react"
-import { useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import { useAuth } from "./AuthProvider/Authprovider";
 
 export const Login = ()=>{
@@ -65,6 +65,7 @@ export const Login = ()=>{
             <br />
             <div style={{color:"red"}}>{error}</div>
             <button>Login</button>
+            <br/>
         </form>
         </main>
     )

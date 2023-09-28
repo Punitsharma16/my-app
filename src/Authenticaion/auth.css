@@ -37,3 +37,16 @@
     border-radius: 1rem;
     
 }
+.logout-btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logout-btn{
+    padding: 0.5rem;
+    width: 10rem;
+    background-color: aquamarine;
+    border-radius: 1rem;
+    border: none;
+}
