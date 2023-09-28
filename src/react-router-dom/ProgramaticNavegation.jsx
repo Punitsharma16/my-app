@@ -6,7 +6,7 @@ export const Navigation = ()=>{
     const Navigate = useNavigate();
     const submitForm = (e)=>{
         e.preventDefault();
-        console.log();
+        // console.log();
         Navigate('/login/ravi');
     }
     return(

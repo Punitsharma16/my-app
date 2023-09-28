@@ -1,0 +1,39 @@
+.links{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: burlywood;
+    margin: 1rem;
+}
+.active{
+
+    color: brown;
+    font-weight: 600;
+}
+
+.login-form{
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.singupForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    background-color: bisque;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    border-radius: 1rem;
+    
+}
